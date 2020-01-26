@@ -1,0 +1,40 @@
+ackage com.company;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+
+        String [] question= {"1. poor man is always rich  ", "2. All cars in the world is red", "3. I am alwys be poor"};
+        boolean[] Rightanswer={false, false, false};
+        // ask the user to put the answer .
+
+        int finalcscore=0;
+        boolean [] studentanswer= new boolean[3];
+
+        for(int i=0;i<3; i++){
+            System.out.println(question[i]);
+             studentanswer[i]= scanner.nextBoolean();
+            if(studentanswer[i]==Rightanswer[i]){
+                finalcscore++;
+
+            }
+
+            else{
+                finalcscore--;
+            }
+
+
+
+        }
+
+        System.out.println(" The score is "+ finalcscore);
+
+
+
+        }
+
+
+    }
+
+
